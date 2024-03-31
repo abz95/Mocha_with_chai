@@ -1,7 +1,7 @@
 const { expect } = require('chai');
 const { sendHttpRequest } = require('../utils/httpHandlers');
 const { readConfigFile } = require('../utils/configReader');
-const config = readConfigFile('../resources/configs/aws.json');
+const config = readConfigFile('../resources/configs/awsData.json');
 
 describe('API Gateway Authorization Tests', function() {
   
@@ -9,7 +9,8 @@ describe('API Gateway Authorization Tests', function() {
     try {
         const response = await sendHttpRequest('GET', config.endPointURL);
         expect(response.status).to.equal(401);
-    } catch (error) {
+    } 
+    catch (error) {
         throw error;
     }
   });
@@ -19,7 +20,8 @@ describe('API Gateway Authorization Tests', function() {
         headers = { authorizationToken: 'unauthorized' };
         const response = await sendHttpRequest('GET', config.endPointURL, headers);
         expect(response.status).to.equal(401);
-    } catch (error) {
+    } 
+    catch (error) {
         throw error;
     }
   });
@@ -29,7 +31,8 @@ describe('API Gateway Authorization Tests', function() {
         headers = { authorizationToken: 'Bearer deny' };
         const response = await sendHttpRequest('GET', config.endPointURL, headers);
         expect(response.status).to.equal(403);
-    } catch (error) {
+    } 
+    catch (error) {
         throw error;
     }
   });
@@ -39,7 +42,8 @@ describe('API Gateway Authorization Tests', function() {
         headers = { authorizationToken: 'Bearer allow' };
         const response = await sendHttpRequest('GET', config.endPointURL, headers);
         expect(response.status).to.equal(200);
-    } catch (error) {
+    } 
+    catch (error) {
         throw error;
     }
   });
@@ -49,7 +53,8 @@ describe('API Gateway Authorization Tests', function() {
         headers = { authorizationToken: 'randomValue' };
         const response = await sendHttpRequest('GET', config.endPointURL, headers);
         expect(response.status).to.equal(500);
-    } catch (error) {
+    } 
+    catch (error) {
         throw error;
     }
   });

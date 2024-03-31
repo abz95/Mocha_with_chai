@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const { invokeLambdaFunction,getFileInformation } = require('../utils/aws');
+const { invokeLambdaFunction,getFileInformation } = require('../utils/awsHelpers');
 const { promisify } = require('util');
 
 const sleep = promisify(setTimeout);
@@ -26,7 +26,6 @@ describe('Verify Lambda function writes to s3 bucket', () => {
 
 
     if (result) {
-      console.log('Content and Metadata for file:', result);
       const currentTime = new Date();
       const twoMinutesAgo = new Date(currentTime.getTime() - 1 * 60 * 1000);
 

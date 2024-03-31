@@ -11,7 +11,8 @@ async function sendHttpRequest(requestType, url, headers, body) {
 
         const response = await axios(requestConfig);
         return response;
-    } catch (error) {
+    } 
+    catch (error) {
         return error.response;
     }
 }

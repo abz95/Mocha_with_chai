@@ -4,6 +4,7 @@ module.exports = {
         'reportTitle=Prosieben\ Report',
         'code=false',
         'timestamp=true',
-        'json=false'
+        'json=false',
+        'reportDir=results'
     ],
 };
