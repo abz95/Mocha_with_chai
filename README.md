@@ -5,7 +5,7 @@ This project is developed in Javascript - Mocha framework with Chai assertions. 
 ## Setup and Execution
 To run the project, use the following command in the terminal (root directory of project):
 ```shell
-mocha ./tests"
+mocha ./tests
 ```
 
 
@@ -16,7 +16,4 @@ The project utilizes "mochaawesome" report for reporting. The report is generate
 
 
 ## Issues Faced
-
-
-
-## Project Scope
+The provided stack "API Gateway REST API with Lambda authorizer" wasn't able to be deployed due to an error regarding nodejs 14 being depreciated on aws, I tried multiple thing to make it work but it just didn't go through. I have also created a PR for updating that on the provided Github project, but it is yet to be approved and merged by the moderators. So, for that project I have made a local express server and tried to replicate the scenario and prepared the test cases as best as I could.
