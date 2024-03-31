@@ -1,0 +1,17 @@
+{
+  "name": "prosieben",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.4.0",
+    "mochawesome": "^7.1.3"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1589.0",
+    "axios": "^1.6.8",
+    "chai": "^4.3.4"
+  }
+}
