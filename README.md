@@ -1,6 +1,4 @@
 ﻿# Mocha with Chai
-This project is developed in Selenium using Java (Maven) and TestNG framework. It follows a POM (Page Object Model) based approach for organizing code. Please note that there might be some structural issues in the project, as this is my first attempt at creating an automation framework using these technologies, except Selenium. I will be adding comments to the code and pushing them for better readability,  and I write comments while coding that are specifically easy for me, and polishing them later. I have currently removed them and would be pushing proper ones later today.
-
 This project is developed in Javascript - Mocha framework with Chai assertions. Please note that there might be some structural issues in the project, as this is my first attempt at creating an automation framework using these technologies, except Javascript. I will be adding comments to the code and pushing them for better readability,  and I write comments while coding that are specifically easy for me, and polishing them later.
 
 
