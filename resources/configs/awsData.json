@@ -1,9 +1,9 @@
 {   
     "region": "us-east-1",
-    "accessKeyId": "AKIA4MTWLNRU3FS3BHHN",
-    "secretAccessKey": "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",
-    "lambdaFunctionName": "Lambda-to-S3-PutObjectFunction-yWfF5GvgjfHV",
-    "s3BucketName": "abuzarbucketnew",
+    "accessKeyId": "myKey",
+    "secretAccessKey": "myKey",
+    "lambdaFunctionName": "Lambda-to-S3",
+    "s3BucketName": "mybucket",
     "s3FileName":"filename.txt",
     "endPointURL": "http://localhost:3000"
 } 
