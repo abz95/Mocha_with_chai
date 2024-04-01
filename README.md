@@ -11,7 +11,7 @@ mocha ./tests
 
 ## Reporting
 
-The project utilizes "mochaawesome" report for reporting. The report is generated in the root folder of this project when the suite is run. Please note that I've added my report to `.gitignore` as to prevent unnecessary repository clutter.
+The project utilizes "mochaawesome" report for reporting. The report is generated in the "results" ddirectory when the suite runs. Please note that I've added my report to `.gitignore` as to prevent unnecessary repository clutter.
 
 
 
