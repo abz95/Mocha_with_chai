@@ -5,10 +5,10 @@ const config = readConfigFile('../resources/configs/awsData.json');
 
 describe('API Gateway Authorization Tests', function() {
   
-  it('Return 403 Forbidden if no authorizationToken header is provided', async function() {
+  it('Return 401 Unauthorized if no authorizationToken header is provided', async function() {
     try {
         const response = await sendHttpRequest('GET', config.endPointURL);
-        expect(response.status).to.equal(403);
+        expect(response.status).to.equal(401);
     } 
     catch (error) {
         throw error;
